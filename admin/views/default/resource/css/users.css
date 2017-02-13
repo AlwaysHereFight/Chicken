@@ -1,0 +1,209 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+.wmtop{
+	width: 100%;
+	/*height: 40px;*/
+	/*border-bottom: 0px solid #ccc;*/
+	/*background: rgba(105, 97, 92,0);*/
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	margin-bottom: 10px;
+}
+.wmlogo{
+	background-color: rgb(159, 153, 208);
+	/*background-image: url(../images/bg.jpg);*/
+	/*background-size: cover;*/
+}
+.wmlogo div:nth-child(1){
+	margin:0px 0px 0px 50px;
+	width: 280px;
+	height: 75px;
+}
+.wmlogo div:nth-child(1) img{
+	width: 235px;
+	height: 65px;
+}
+.wmtop p{
+	height: 80px;
+	line-height: 68px;
+	font-weight: bold;
+	width: 685px;	
+	color:#fff;
+	margin:0px auto;
+	margin-top: -38px;
+	font-size: 24px;
+	background:url(../images/yuanbiao1.png) -5px -15px no-repeat;
+	font-family: kaiti;
+}
+.wmtop p span{
+	font-family: STkaiti;
+	color: #873168;
+	margin-right: 10px;
+	margin-left: 80px;
+	font-size: 30px;
+}
+
+#con1{
+	width: 1316px;
+	margin:0px auto;
+}
+.wmiframe1{
+	/*width: 100%;*/
+	height: 87%;
+	float: left;
+	position: fixed;
+	top: 130px;
+	/*left: 40px;*/
+}
+.wmdiv1{
+	width: 1102px;
+	margin-left: 210px;
+	margin-top: 130px;
+}
+.wmdiv2{
+	/*float: left;*/
+	width: 70px;
+	font-size: 15px;
+	text-align: center;
+	height: 30px;
+	background-color: #fff;
+	line-height: 30px;
+	border-width:4px 1px 2px 1px;
+	border-style: solid;
+	border-color:#9a49fd #ccc #fff #ccc ;
+	margin-top: 10px;
+	margin-left: 10px;
+	z-index: 10;
+	/*padding-bottom: 2px;*/
+	/*position: relative;*/
+}
+.wmdiv3{
+	/*float: left;*/
+	width: 70px;
+	height: 2px;
+	background-color:rgba(100, 100, 100, 0.6);
+	/*border-top: 4px solid;*/
+}
+.wmdiv5{
+	/*float: left;*/
+	width: 70px;
+	font-size: 15px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	border-width:4px 1px 0px 1px;
+	border-style: solid;
+	border-color:#9a49fd #ccc #ccc #ccc ;
+	margin-top: 180px;
+	margin-left: 10px;
+	/*position: relative;*/
+}
+.wmusers{
+	width: 95%;
+	float: left;
+	margin-left: 10px;
+	font-family: Arial;
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #ccc;
+	position: relative;
+	overflow: hidden;
+	/*overflow: hidden;*/
+}
+#wmadd{
+	width: 80px;
+	height: 30px;
+	margin-left: 85.4%;
+	margin-top: -50px;
+	background-color: #F5EEC1;
+}
+.wmusers p{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.wmusers table{
+	float: left;
+	margin:30px 30px;
+	position: relative;
+	width: 80%;
+}
+.wmusers table tr th:first-child{
+	width: 25%;
+}
+#managetr td:first-child input{
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border: 0px;
+	text-align: center;
+	font-size: 17px;
+}
+#managetr input{
+	width: 100%;
+	height:100%;
+	outline: none;
+	outline: none;
+	border: 0px;
+	text-align: center;
+	font-size: 17px;
+}
+
+.wmusers table tr th{
+	width: 32%;
+	height: 40px;
+	text-align: center;
+	background-color: #eee;
+
+}
+.wmusers table tr td{
+	text-align: center;
+	height: 40px;
+}
+#wmuser tr th:first-child{
+	width: 25%;
+}
+#wmuser tr th{
+	width: 22%;
+	height: 40px;
+	text-align: center;
+	background-color: #eee;
+}
+#wmuser tr th:last-child{
+	width: 10%;
+}
+.wmcz{
+	float: left;
+	width: 70px;
+	margin-top: 40px;
+	position: absolute;
+	left: 89%;
+	background-color: rgb(216, 236, 201);
+
+}
+.wmsave{
+	width: 70px;
+	margin-top: 60px;
+	position: absolute;
+	left: 89%;
+	background-color: rgb(216, 236, 201);
+}
+.wmdivusers{
+	float: left;
+}
+.userinput{
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border:0px;
+	font-size: 17px;
+}
+.userinput{
+	/*float: left;*/
+	outline: none;
+	border:0px;
+
+}

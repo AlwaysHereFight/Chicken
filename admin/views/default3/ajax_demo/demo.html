@@ -1,0 +1,29 @@
+<!Doctype html>
+	<head>
+
+	<!-- 引入jquery插件，不引入无法使用ajax -->
+	<script src="<{$res}>/js/jquery-1.11.3.min.js"></script> 
+		<script>
+			/* 时间锚，用来确定网页是否刷新 */
+			document.write(new Date()+"<br>");
+			document.write(new Date()+"<br>");
+			document.write(new Date()+"<br>");
+
+			function demo(){
+				//获得text类型的表单对象
+				var obj = document.getElementById('test1');
+				//ajax语句
+				$.post("<{$url}>/view",{},function(data){
+					obj.value = data;
+				});
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			<input type = 'text' id = 'test1'>
+			<input type = 'button' value='get_value_from_server' id='test1_button' onclick='demo()'>
+			<br>
+		</form>
+	</body>
+</html>

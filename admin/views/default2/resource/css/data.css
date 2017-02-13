@@ -1,0 +1,114 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+.wmtop{
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index:1;
+
+}
+.wmtop p{
+	line-height: 40px;
+	font-weight: bold;
+	/*font-style: ;*/
+	color:#B79F9F;
+	margin-left: 20px;
+}
+.wmtop p span{
+	font-family: kaiti;
+	color: #B99DBF;
+	margin-right: 10px;
+}
+body{
+	background:#cccccc;
+}
+.wmiframe1{
+	width: 15%;
+	height: 94.5%;
+	float: left;
+	position: fixed;
+	top: 40px;
+	left: 0px;
+
+}
+
+.exinxi{
+	width:90%;
+	/*border:1px solid #000;*/
+	position:relative;
+	margin:70px 10px;
+}
+
+
+.eright{
+	width:90%;
+	position:absolute;
+	top:0px;
+	left:215px;
+	background:#ffffff;
+}
+.epersou p{
+	padding:20px 10px;
+	font-size:30px;
+	font-weight:bold;
+	color:#D56A1F;
+	font-family:KaiTi;
+}
+.edata{
+	margin:20px 20px;
+	position:relative;
+}
+
+
+.exuesheng{
+	padding:20px 0px;
+}
+.eqiye{
+	position:relative;
+}
+.exuesheng{
+	position:absolute;
+	top:-15px;
+	right:50px;
+}
+.edata hr{
+	width:90%;
+	margin:10px -20px;
+}
+.eshangchuan{
+	position:absolute;
+	top:0px;
+	right:40px;
+}
+.eqiye h3{
+	margin:10px 0px;
+}
+ul{
+	position:relative;
+}
+ul li{
+	width:87%;
+	height:35px;
+	line-height:30px;
+	background:#EBEBEB;
+	margin-top:10px;
+}
+ul button{
+	width:35px;
+	height:20px;
+	color:red;
+	position:absolute;
+	/*top:6px;
+	right:0px;*/
+	margin:6px 10px;
+	line-height:15px;
+	cursor:pointer;
+}

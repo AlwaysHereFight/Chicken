@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数据管理-招聘信息</title>
+	<link rel="stylesheet" href="<{$res}>/css/recinfo.css">
+	<script src="public/js/statistics.js"></script>
+</head>
+<body>
+<div class="ebody">
+	<div class="wmtop">
+		<div class="wmlogo">
+			<div>
+				<img src="<{$res}>/images/logo.png" alt="">
+			</div>
+			<p><span>印刷包装与数字媒体学院</span>就业信息管理系统</p>
+		</div>	
+	</div>
+	<div class="exinxi">
+		<iframe src="<{$navurl}>" frameborder="0" class="wmiframe1" scrolling="no"></iframe>
+		<div class="eright">
+			<div class="epersou" id="eqiehuan">
+				<p id="select1">资料下载</p>
+				<p id="select2">导入信息</p>
+			</div>
+			<div class="edata">
+				<!-- <ul id="enterprise"> -->
+					<!-- <li id="show1"> -->
+					<div class="eqiye" id="show1">
+						<h3>资料下载：</h3>
+						<form action="<{$url}>/uploadexcel" method='post' enctype='multipart/form-data'>
+							<p class="eshangchuan">
+								<span>上传资料：</span>
+								<input type="file" id="file" name="data" multiple="multiple">
+								<input type="submit" id="ebtn1" value="提交" name='data_submit'>
+							</p>
+						</form>
+
+						<input type="button" name="" id="ebtn3" value="重 置" style='display:none'>
+
+						<p class="ejishu">共<span id="espan"> <{$count}> </span>条资料信息</p>
+
+						<ol id="elist">
+							<{section name='doc' loop = $recsArr}>
+								<li>
+									<a href="../../<{$recsArr[doc].filePath}>" target='_blank' >
+										<{$recsArr[doc].file}>
+									</a>
+									<span style='position:absolute;left:450px'>
+										<{$recsArr[doc].time}>
+									</span>
+									<a style='position:absolute;right:50px; font-size:15px;' href='uploadexcel/delete/<{$recsArr[doc].file}>'>
+										删除
+									</a>
+								</li>
+							<{/section}>
+						</ol>
+					</div>
+					</li>
+					<!-- <li id="show2"> -->
+					<div class="eqiye2" id="show2">
+						<h3>导入信息：</h3>
+						<form action="<{$url}>/uploadexcel" method='post' enctype='multipart/form-data'>
+							<p class="eshangchuan">
+								<span>导入学生信息：</span>
+								<input type="file" id="file2" name="stus" multiple="multiple">
+								<input type="submit" id="ebtn4" value="提交" name='uploadexcel'>
+							</p>
+
+							<input type="button" name="" id="ebtn6" value="重 置">
+
+						</form>
+						<!-- <p class="ejishu">共<span id="espan2"> 0 </span>条信息</p> -->
+						<ol id="elist1">
+						</ol>
+					</div>
+					<!-- </li> -->
+				<!-- </ul> -->
+			</div>
+		</div>
+	</div>
+</div>
+<script src="<{$res}>/js/recinfo.js"></script>
+</body>
+</html>

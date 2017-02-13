@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>白名单</title>
+	<link rel="stylesheet" href="../resource/css/pc-inf.css">
+</head>
+<body>
+	<header>
+		<div class='lbox1'>
+			<div class='logo'>
+				<p>印刷包装工程学院</p>
+				<span>就业管理系统</span>
+			</div>
+			<nav>
+				<a href="#">学生信息</a>
+				<a href="#">白名单</a>
+				<a href="#" id="lmes">数据管理</a>
+				<a href="#">用户管理</a>
+				<a href="#">返回主站</a>
+				<div class='ldiv1'>
+					<a href="#">企业信息管理</a><br>
+					<a href="#">学生简历管理</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div id='lbox2'>
+		<div id='lbmd'>
+			<a href="#">首页</a>&gt&gt
+			<a href="#">白名单</a>
+		</div>
+		<div class='lstu-inf'>
+			<div class='lchaxun'>
+				姓名：<input type="text">
+				学号：<input type="text">
+				<button>查询</button>
+			</div>
+			<table id='ltab'>
+				<tr>
+					<th>选择</th>
+					<th>学号</th>
+					<th>姓名</th>
+					<th>专业</th>
+					<th>班级</th>
+					<th>四级是否通过</th>
+					<th>不及格课程</th>
+					<th>是否需要约谈</th>
+					<th>备注</th>
+				</tr>
+				<tr id='ltr1'>
+					<td id='lsel'><input type="checkbox"></td>
+					<td><a href="#">1</a></td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td><input type="radio" name="ly" >是
+						<input type="radio" name="ly" >否</td>
+					<td><textarea name="" class='ltex' cols="7" rows="1"></textarea></td>
+				</tr>
+			</table>
+			<div>
+				<p>选择</p>
+				<p><a href="#"></a></p>
+			</div>
+			<button>保存</button>
+		</div>
+	</div>
+</body>
+<script>
+	var lmes=document.getElementById('lmes');
+	var ldiv1=document.getElementsByClassName('ldiv1')[0];
+	lmes.onmouseover=function(){
+		lmes.style.backgroud='#fff';
+		ldiv1.style.display='block';
+		lmes.onmouseout=function(){
+			ldiv1.style.display='';
+		}
+	}
+	var ltab=document.getElementById('ltab');
+	for (var i = 10; i >= 0; i--) {
+	var tr=document.createElement('tr');
+	ltab.appendChild(tr);
+	}
+	var ltr=document.getElementsByTagName('tr');
+	for (var i = 1;i<13;i++) {
+		ltr[i].innerHTML=ltr[1].innerHTML;
+	}
+</script>
+</html>

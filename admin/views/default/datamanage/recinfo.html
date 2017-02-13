@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>企业信息</title>
+	<link rel="stylesheet" href="<{$res}>/css/uploadexcel.css">
+	<script src="public/js/statistics.js"></script>
+</head>
+<body>
+<div class="ebody">
+	<div class="wmtop">
+		<div class="wmlogo">
+			<div>
+				<img src="<{$res}>/images/logo.png" alt="">
+			</div>
+			<p><span>印刷包装与数字媒体学院</span>就业信息管理系统</p>
+		</div>	
+	</div>
+	<div class="exinxi">
+		<iframe src="<{$navurl}>" frameborder="0" class="wmiframe1" scrolling="no"></iframe>
+		<div class="eright">
+			<div class="epersou">
+				<p>企业信息<span style="font-size:20px;color:#D56A1F;"</span></p>
+				<hr>
+			</div>
+			<div class="edata">
+				<div class="exuesheng">
+					<form action="<{$url}>/recinfo" method='post' enctype='multipart/form-data'>
+						<p class="ewenjian">
+							<span>
+								上传企业信息：
+							</span>
+							<input type="file" multiple="multiple" id="efile" name='rec'>
+							<input type="submit" id="ebtn" value="提交" name='recinfo' style='width:50px'>
+						</p>
+
+						<p id="p1">共 <span id='span1'> <{$count}> </span> 条企业信息</p>
+
+
+					</form>
+
+					<ul id="elist">
+
+						<{section name='doc' loop = $recsArr}>
+							<li>
+								<a href="../../<{$recsArr[doc].filePath}>" target='_blank' >
+									<{$recsArr[doc].file}>
+								</a>
+								<span style='position:absolute;left:450px'>
+									<{$recsArr[doc].time}>
+								</span>
+								<a style='position:absolute;right:50px; font-size:15px;' href='recinfo/delete/<{$recsArr[doc].file}>'>
+									删除
+								</a>
+							</li>
+						<{/section}>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="<{$res}>/js/upload.js"></script>
+</body>
+</html>

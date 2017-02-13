@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>个人信息</title>
+	<link rel="stylesheet" href="../resource/css/student.css">
+	<script src='../resource/js/student.js'></script>
+</head>
+<body>
+	<div class='lbox'>
+		<div class='lbox2'>
+			<div class='lmask'>个人信息</div>
+			<div class='ltop'></div>
+		</div>
+		<div class='lbottom'>
+			<div id="linform">
+				<form action="" id='form'>
+					<ul>
+						<li>专业：<span>数字媒体技术</span></li>
+						<li>班级：<span>131班</span></li>
+						<li>学号：<span>3130342014</span></li>
+						<li>姓名：<span>李蓉</span></li>
+						<li>性别：<span>女</span></li>
+						<li>籍贯：<span>陕西</span></li>
+						<li>家庭住址：<input type="text" ></li>
+						<li>联系方式：<input type="text"  maxlength="11"></li>
+						<li>家长联系方式：<input type="text" maxlength="11"></li>
+						<li >四级是否通过：<input type="radio" name="r1" calss='lcet4'>是
+						<input type="radio" name="r1" calss='lcet4'>否
+						<input type="text" placeholder="输入成绩" id="lipt"></li>
+					</ul>
+					<div id='lkc'>
+						<span id='lt'>不及格课程：</span>
+						<input type="text" id='lnumber' placeholder="请输入课程数"><span id="ltj"></span>
+						<div>
+							<input type="text" placeholder="请输入课程名">
+							<p id='ltext'>*不能为空</p>
+							<span id='ldel'><a href="#">删除</a></span>
+						</div>
+					</div>
+					<div id='lbtn'>
+						<input type="button" value='提交' id='submit'>
+						<input type="reset" value='重置'>
+					</div>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

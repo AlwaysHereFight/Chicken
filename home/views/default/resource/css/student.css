@@ -1,0 +1,426 @@
+*{
+			margin:0px;
+			padding:0px;
+}
+
+.lbox{
+	width:100%;
+	position: relative;
+	margin-bottom: 10px;
+	background: url(../images/bg.png);
+	background-repeat: repeat-y;
+	background-position: left 0px;
+	
+}
+.lbox2{
+	overflow: hidden;
+}
+.lmask{
+	width:100%;
+	height: 130px;
+	float:left;
+	background-color: rgba(107, 124, 210, 0.55)
+;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 52px;
+	color:#fff;
+	padding-left:10px;
+	/*-webkit-transform:rotateZ(90deg);*/
+	text-shadow:0px 0px 10px #8C8CA5;
+	position: relative;
+	font-family: kaiti;
+}
+.lmask p{
+	font-size: 48px;
+	position: absolute;
+	top:45px;
+	left:140px;
+}
+.lmask img{
+	height: 150px;
+}
+.ltop{
+	height:130px;
+	background: url(../images/1.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+.ltop img{
+	position: absolute;
+	top:58px;
+	left:87%;
+}
+ul{
+	list-style: none;	
+}
+#linform ul{
+	
+	margin-left:20px;
+}
+#linform li{
+	height:60px;
+	font-size: 32px;
+	line-height: 60px;
+
+}
+#linform li input{
+	height:30px;
+	box-shadow: 0px 0px 5px #ccc;
+
+}
+#linform button{
+	width:100px;
+	height:60px;
+	margin-left:10px;
+}
+#lkc{
+	width:80%;
+	position:relative;
+	margin-top:10px;
+	margin-left: 40px;
+}
+ a{
+	text-decoration: none;
+}
+#lkc #lt{
+	/*float:left;*/
+	font-size: 32px;
+}
+
+#lkc #lnumber{
+	border-radius: 5px;
+	height: 30px;
+	width:49%;
+}
+#lkc input{
+	border-radius:10px;
+	height: 40px;
+	width:85%;
+	margin-bottom: 10px;
+	margin-left:10px;
+	border:1px solid #aaa;
+}
+#ltj{
+	position: absolute;
+	top:0px;
+	right:0px;
+	width:30px;
+	height: 30px;
+	background:#000 url(../images/tianjia.png) 0 0 no-repeat;
+}
+#lkc p{
+	color:red;
+	display: none;
+	/*position: absolute;
+	top:45px;
+	right:0px;*/
+}
+#lipt{
+	width:30%;
+	height: 32px;
+	border:1px solid #aaa;
+}
+#lbtn{
+	margin-left:40px;
+}
+#lbtn input{
+	width:15%;
+	height: 50px;
+	background-color: #ccc;
+	border-radius: 10px;
+	font-size: 25px;
+	border:1px solid #aaa;
+}
+#lkc div{
+	position: relative;
+}
+#lkc div span{
+	position: absolute;
+	top:0px;
+	right:0px;
+}
+/*招聘信息*/
+.lcon{
+	text-align: center;
+	margin-top: 10px;
+}
+.hide{
+	height:820px;
+	overflow:hidden;
+}
+.hide div{
+	width:90%;
+	height:800px;
+	/*line-height: 520px;*/
+	/*text-align: center;*/
+	margin:10px auto;
+}
+.hide ul a{
+	text-decoration: none;
+}
+.lyema{
+	width:400px;
+	margin:10px auto;
+	overflow: hidden;
+}
+.lyema img{
+	width:15px;
+	margin:10px ;
+}
+.lyema li{
+	width:50px;
+	height:40px;
+	line-height: 40px;
+	font-size: 30px;
+	float: left;
+	background-color: #f1f1f1;
+	margin-left:10px;
+}
+.hide div .lu1{
+	height: 50px;
+}
+.hide li{
+	width:100%;
+	height: 40px;
+	margin-right: 10px;
+	font-size: 32px;
+	float: left;
+}
+.hide li:nth-child(2n+1){
+	background-color: #f1f1f1;
+}
+.hide ul:first-child{
+	line-height: 50px;
+	background-color: skyblue;
+}
+.lyema li:hover{
+	background-color:skyblue;
+}
+#ltz{
+	background: url(../images/2.jpg) 0 0 no-repeat;
+	/*width:30px;*/
+	margin-top: 10px;
+	margin-left:30px;
+}
+#ltz marquee{
+	font-size: 30px;
+	margin-left:40px;
+}
+.lfl{
+	margin-left:30px;
+}
+.l1 {
+	height:70px;
+	font-size: 20px;
+	line-height: 80px;
+	padding-left: 20px;
+	position: relative;
+	background-color: #A5BDFD;
+	border-radius: 20px;
+}
+.ldel{
+	position: absolute;
+	top:23px;
+	right: 20px;
+}
+#ljob{
+	display:none;
+}
+.lstuinf{
+	margin: 10px auto;
+}
+#linform table{
+	margin-left:40px;
+	margin-top: 10px;
+	font-size: 32px;
+}
+table td{
+	height: 50px;
+}
+table td:first-child{
+	width:350px;
+}
+table input{
+	/*width:200px;*/
+	height: 40px;
+	border-radius: 10px;
+	border:1px solid #aaa;
+}
+#linform table td:nth-child(4){
+	width:100%;
+}
+
+.ldaohang{
+	width:200px;
+	text-align: center;
+	padding:10px;
+	border-radius: 10px;
+	font-size: 32px;
+	position: absolute;
+	top:100px;
+	right: 10px;
+	z-index: 100;
+	display: none;
+	
+}
+.ldaohang ul{
+	background-color: #f1f1f1;
+	border-radius: 10px;
+	padding:10px;
+}
+.ldaohang li{
+	height:60px;
+	margin:10px;
+	line-height: 60px;
+	background-color: #fff;
+	border-radius: 5px
+}
+.limg{
+	position: absolute;
+	top:-9px;
+	right: 50px;
+}
+.wmjob span,.wmupjianli{
+
+	float: left;
+	margin-left: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 32px;
+	/*color: red;*/
+}
+
+.wmjob select,.wmjob input{
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 300px;
+	font-size: 30px;
+}
+.wmjianli{
+	margin-left: 40px;
+	margin-top: 10px;
+	font-size: 30px;
+}
+#wmcominput{
+	float: left;
+	margin-left: 20px;
+}
+#wmcom,#wmcominput{
+	display: none;
+}
+.lbtnBox{
+	width:640px;
+	height: 70px;
+	text-align: center;
+	
+}
+#wmbtn1{
+	width: 200px;
+	height: 70px;
+	margin:10px auto; 
+	font-size: 32px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 30px #aaa;
+}
+/*************jobinfo************/
+.linf-top {
+	position: relative;
+	text-align: center;
+}
+.linf-top p{
+	width: 200px;
+	height: 80px;
+	line-height:80px;
+	border-radius: 10px;
+	font-size: 35px;
+	margin: 10px 0px 10px 10px; 
+	background-color: #A5BDFD;
+	-webkit-animation:move 3s ease-out forwards;
+	position: absolute;
+	left:10px;
+	top:0px;
+}
+@keyframes move{
+	0%{
+		-webkit-transform: rotate(10deg);
+		left:10px;
+		background-color: #A5BDFD;
+		color:#000;
+	}
+	10%{
+		-webkit-transform: rotate(10deg);
+		left:10px;
+		background-color: #A5BDFD;
+	}
+	50%{
+		-webkit-transform: rotate(0deg);
+		left:420px;
+		background-color: #ccc;
+		color:blue;
+		text-shadow: 0px 0px 5px #000;
+	}
+	100%{
+		-webkit-transform: rotate(-360deg);
+		left:10px;
+		background-color: #A5BDFD;
+		color:#000;
+	}
+}
+#lselect{
+	height: 60px;
+	margin:110px 20px 20px 20px;
+	background-color: #f1f1f1;
+	line-height: 60px;
+}
+#lselect span{
+	height: 40px;
+	line-height: 40px;
+	font-size: 32px;
+	margin:0px 10px;
+	font-weight: bold;
+}
+#lselect input{
+	height: 40px;
+	box-shadow: 0px 0px 10px skyblue;
+	border-radius: 10px;
+}
+#lselect img{
+	margin-left: 20px;
+}
+.linf-bottom ul{
+	width:100%;
+	padding:20px;
+}
+.linf-bottom li{
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px dotted #000;
+	font-size: 32px;
+}
+.linf-bottom li:hover{
+	color:red;
+	font-size: 40px;
+}
+.linf-bottom img{
+	width:30px;
+	height: 30px;
+}
+.linf-bottom a{
+	width:40px;
+	height: 60px;
+	float:right;
+	margin-right: 40px;
+	line-height: 60px;
+}
+.lfl select{
+	height:50px;
+	border-radius: 5px;
+}
+#lf-sel,#se{
+	width:150px;
+	height: 50px;
+	background: url(../images/selcon.png) 15px 12px no-repeat;
+	border-radius: 5px;
+}
+

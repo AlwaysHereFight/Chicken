@@ -1,0 +1,91 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+body{
+	background:url(../images/biye3.jpg) 0 0 no-repeat;
+	background-size:100%;
+	/*opacity:0.5;*/
+}
+.econ{
+	width:640px;
+	height:1200px;
+	background:rgba(150,0,255,0.8);
+	margin:0px auto;
+}
+.edenglu{
+	width:560px;
+	height:900px;
+	/*border:1px solid #000;*/
+	margin:0px auto;
+}
+.edenglu img{
+	margin:140px 85px;
+}
+.edenglu h1{
+	color:#000;
+	position:absolute;
+	top:220px;
+	left:255px;
+	font-style:italic;
+}
+.edenglu .edeng{
+	font-size:40px;
+	color:#fff;
+	position:absolute;
+	top:340px;
+	left:270px;
+}
+.edenglu .eyonghuming{
+	position:absolute;
+	top:440px;
+	left:80px;
+	font-size:32px;
+	/*background:url(../images/login.png) 130px 10px no-repeat;*/
+}
+.eyonghuming input{
+	width:330px;
+	height:50px;
+	line-height:38px;
+	font-size:30px;
+	background:rgba(255,255,255,0.8);
+}
+.emima input{
+	width:330px;
+	height:50px;
+	line-height:38px;
+	font-size:30px;
+	background:rgba(255,255,255,0.8);
+}
+.edenglu .emima{
+	position:absolute;
+	top:530px;
+	left:80px;
+	font-size:32px;
+}
+.emima .ema{
+	padding-left:34px;
+}
+.exuehao::-webkit-input-placeholder{
+	color:#666;
+	font-size:22px;
+	padding-left:5px;
+	line-height:38px;
+}
+.etijiao{
+	width:300px;
+	height:50px;
+	background:#ff9936;
+	position:absolute;
+	top:660px;
+	left:220px;
+	font-size:30px;
+	font-weight:bold;
+}
+.eti{
+	padding-left:20px;
+}
+.ejiao{
+	padding-left:60px;
+}

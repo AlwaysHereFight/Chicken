@@ -1,0 +1,249 @@
+*{
+			margin:0px;
+			padding:0px;
+}
+.lbox{
+	width:100%;
+
+}
+.lbox2{
+	overflow: hidden;
+}
+.lmask{
+	width:100%;
+	height: 130px;
+	float:left;
+	background-color: rgba(107, 124, 210, 0.55)
+;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 52px;
+	color:#fff;
+	padding-left:10px;
+	/*-webkit-transform:rotateZ(90deg);*/
+	text-shadow:0px 0px 10px #8C8CA5;
+	position: relative;
+	font-family: kaiti;
+}
+.lmask p{
+	font-size: 48px;
+	position: absolute;
+	top:45px;
+	left:140px;
+}
+.lmask img{
+	height: 150px;
+}
+.ltop{
+	height:130px;
+	background: url(../images/1.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+.ltop img{
+	position: absolute;
+	top:58px;
+	left:87%;
+}
+ul{
+	list-style: none;	
+}
+#linform ul{
+	
+	margin-left:20px;
+}
+#linform li{
+	height:60px;
+	font-size: 32px;
+	line-height: 60px;
+
+}
+#linform li input{
+	height:30px;
+	box-shadow: 0px 0px 5px #ccc;
+
+}
+#linform button{
+	width:100px;
+	height:60px;
+	margin-left:10px;
+}
+#lkc{
+	width:80%;
+	position:relative;
+	margin-top:10px;
+	margin-left: 20px;
+}
+ a{
+	text-decoration: none;
+}
+#lkc #lt{
+	/*float:left;*/
+	font-size: 32px;
+}
+
+#lkc #lnumber{
+	border-radius: 5px;
+	height: 30px;
+	width:49%;
+}
+#lkc input{
+	border-radius:10px;
+	height: 32px;
+	width:85%;
+	margin-bottom: 10px;
+	margin-left:10px;
+}
+#ltj{
+	position: absolute;
+	top:0px;
+	right:0px;
+	width:30px;
+	height: 30px;
+	background:#000 url(../images/tianjia.png) 0 0 no-repeat;
+}
+#lkc p{
+	color:red;
+	display: none;
+	/*position: absolute;
+	top:45px;
+	right:0px;*/
+}
+#lipt{
+	width:20%;
+	height: 32px;
+}
+#lbtn{
+	margin-left:10px;
+}
+#lbtn input{
+	width:15%;
+	height: 50px;
+	background-color: #ccc;
+	border-radius: 10px;
+	font-size: 25px;
+	/*font-weight: bold;*/
+}
+#lkc div{
+	position: relative;
+}
+#lkc div span{
+	position: absolute;
+	top:0px;
+	right:0px;
+}
+/*招聘信息*/
+.lcon{
+	text-align: center;
+	margin-top: 10px;
+}
+.hide{
+	height:810px;
+	overflow:hidden;
+}
+.hide div{
+	width:90%;
+	height:800px;
+	/*line-height: 520px;*/
+	/*text-align: center;*/
+	margin:10px auto;
+}
+.hide ul a{
+	text-decoration: none;
+}
+.lyema{
+	width:400px;
+	margin:10px auto;
+	overflow: hidden;
+}
+.lyema img{
+	width:15px;
+	margin:10px ;
+}
+.lyema li{
+	width:50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+	float: left;
+	background-color: #f1f1f1;
+	margin-left:10px;
+}
+.hide div .lu1{
+	height: 50px;
+}
+.hide li{
+	width:100%;
+	height: 40px;
+	margin-right: 10px;
+	font-size: 32px;
+	float: left;
+}
+.hide li:nth-child(2n+1){
+	background-color: #f1f1f1;
+}
+.hide ul:first-child{
+	line-height: 50px;
+	background-color: skyblue;
+}
+.lyema li:hover{
+	background-color:skyblue;
+}
+#ltz{
+	background: url(../images/2.jpg) 0 0 no-repeat;
+	/*width:30px;*/
+	margin-top: 10px;
+	margin-left:30px;
+}
+#ltz marquee{
+	font-size: 30px;
+	margin-left:40px;
+}
+.lfl{
+	margin-left:30px;
+}
+.llogo{
+	display: none;
+	position: absolute;
+	top:90px;
+	right:10px;
+	z-index:100;
+}
+.llogo ul{
+	width:100px;
+	list-style: none;
+	/*overflow: hidden;*/
+	margin-top: 1px;
+	background-color: rgba(65, 136, 206, 0.78);
+	padding:10px;
+	border-radius: 10px;
+}
+.llogo ul li{
+	width:100px;
+	height: 40px;
+	font-size: 20px;
+	background-color: #fff;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 5px;
+	
+}
+.llogo ul li:nth-child(1),.llogo ul li:nth-child(2){
+	border-right: 1px solid #fff;
+	margin-bottom:10px;
+
+}
+.llogo ul li:nth-child(3){
+	padding-bottom: 5px;
+}
+.l1 {
+	height:80px;
+	font-size: 20px;
+	line-height: 80px;
+	margin-left: 20px;
+	position: relative;
+}
+.ldel{
+	position: absolute;
+	top:23px;
+	right: 20px;
+}

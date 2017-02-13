@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>招聘信息</title>
+	<link rel="stylesheet" href="<{$res}>/css/student.css">
+	
+	<script src="public/js/statistics.js"></script>
+</head>
+<body>
+	<div class='lbox'>
+		<div class='lbox2'>
+			<div class='lmask'><img src="<{$res}>/images/5.png" alt=""><p>就业信息管理系统</p></div>
+			<div class='ltop'><img src="<{$res}>/images/classify_icon.png" alt=""></div>
+			<div class='ldaohang'>
+				<div class='limg'>
+					<img src="<{$res}>/images/daohang.png" alt="">
+				</div>
+				<ul>
+					<li><a href="myinfo">基本信息</a></li>
+					<li><a href="recinfo">招聘信息</a></li>
+					<li><a href="datadownload">资料下载</a></li>
+				</ul>
+
+			</div>
+		</div>
+		<div id='ltz' style='display:none'>
+			<marquee behavior="scroll" direction="left">
+				最新招聘信息
+			</marquee>
+		</div>
+		<div class="lfl" style='display:none'>
+			<select name="" id="">
+				<option value="">按地区分类</option>
+				<option value="">华南</option>
+				<option value="">陕西</option>
+				<option value="">华北</option>
+				<option value="">长三角</option>
+			</select>
+			<button id='lf-sel'>查找</button>
+		</div>
+		<div class='lcon'>
+			<{section name = doc loop = $recsArr}>
+				<div style = 'width:100%; height:10px; backgorund-color:gray'></div>
+				<div style = 'width:100%; height:60px;line-height:200%; background-color:rgba(0,0,80,0.1); font-size:30px;'>
+					<a href='../../<{$recsArr[doc].filePath}>' ><{$recsArr[doc].file}></a>
+				</div>
+			<{/section}>
+
+			<div style='display:none'>
+				<div class='hide'>
+				</div>
+				<div class='lyema'>
+					<ul>
+						<li><a href="#1" class='la'>1</a></li>
+						<li><a href="#2" class='la'>2</a></li>
+						<li><a href="#3" class='la'>3</a></li>
+						<li><a href="#4" class='la'>4</a></li>
+						<li><a href="#5" class='la'>5</a></li>
+						<li><a href="#6" class='la'>6</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src='<{$res}>/js/recinfo.js'></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>管理员界面</title>
+	<link rel="stylesheet" href="../resource/css/pc-inf.css">
+</head>
+<body>
+	<header>
+		<div class='lbox1'>
+			<div class='logo'>
+				<p>印刷包装工程学院</p>
+				<span>就业管理系统</span>
+			</div>
+			<nav>
+				<a href="#">学生信息</a>
+				<a href="#">白名单</a>
+				<a href="#" id="lmes">数据管理</a>
+				<a href="#">用户管理</a>
+				<a href="#">返回主站</a>
+				<div class='ldiv1'>
+					<a href="#">企业信息管理</a><br>
+					<a href="#">学生简历管理</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div id="lbox2">
+		<article></article>
+		<aside>
+			<div id='lcx'>
+				<p>毕业生档案去向</p>
+				学号：<input type="text"><br>
+				姓名：<input type="text"><br>
+				<button>查询</button>
+			</div>
+			<div id='lnewjl'>
+				<p>最新简历<a href="#" id='lmore'>更多&gt&gt</a></p>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="../resource/images/pic.jpg" alt="">
+							姓名：<span>范冰冰</span>
+							就业意向：<span>it</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="../resource/images/pic.jpg" alt="">
+							姓名：<span>范冰冰</span>
+							就业意向：<span>it</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="../resource/images/pic.jpg" alt="">
+							姓名：<span>范冰冰</span>
+							就业意向：<span>it</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="../resource/images/pic.jpg" alt="">
+							姓名：<span>范冰冰</span>
+							就业意向：<span>it</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+	</div>
+	<footer></footer>
+</body>
+<script>
+	var lmes=document.getElementById('lmes');
+	var ldiv1=document.getElementsByClassName('ldiv1')[0];
+	lmes.onmouseover=function(){
+		lmes.style.backgroud='#fff';
+		ldiv1.style.display='block';
+		lmes.onmouseout=function(){
+			ldiv1.style.display='';
+		}
+	}
+</script>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人信息</title>
+	<link rel="stylesheet" href="<{$res}>/css/student.css">
+</head>
+<body>
+<div class="ebody">
+	<!-- <iframe src="../public/head.html" frameborder="0" class="eframe2" scrolling="no"></iframe> -->
+	<div class="wmtop">
+		<p><span>印刷包装与数字媒体学院</span>就业信息管理系统</p>
+	</div>
+	<div class="exinxi">
+		<iframe src="<{$navurl}>" frameborder="0" class="wmiframe1" scrolling="no"></iframe>
+		<div class="eright">
+			<div class="epersou">
+				<p>个人信息</p>
+				<hr>
+				<form action="demo_form.asp" method="get" class="esou">
+				姓名：<input type="text">
+				学号：<input type="text">
+				<input type="submit" value="搜 索" class="esousuo">
+				</form>
+			</div>
+			<form action="" method="post" name="form1" id="euser" onsubmit="return checkcall">
+			<table class="etable">
+				<tr>
+					<td>专业</td>
+					<td><{$stu.major}></td>
+					<td>班级</td>
+					<td><{$stu.class}></td>
+					<td>学号</td>
+					<td><{$stu.xh}></td>
+				</tr>
+				<tr>
+					<td>姓名</td>
+					<td><{$stu.sname}></td>
+					<td>性别</td>
+					<td><{$stu.gender}></td>
+					<td>籍贯</td>
+					<td><{$stu.jiguan}></td>
+				</tr>
+				<tr>
+					<td>就业意向</td>
+					<td><{$stu.jobintent}></td>
+					<td>就业状态</td>
+						<td id="ezhuangtai"><{$stu.jobstate}></td>
+						<p id="ehuiyue">是否毁约？<button id="ebtn" type="button">是</button></p>
+						<td>是否毁约</td>
+						<td id="eshi"></td>
+				</tr>
+				<tr>
+					<td>就业方向</td>
+					<td><{$stu.jobdirect}></td>
+					<td>参加招聘会次数</td>
+					<td></td>
+					<td>就业地区 </td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>签约公司</td>
+					<td></td>
+					<td>本人联系方式</td>
+					<td><{$stu.phone}></td>
+					<td>父母联系方式</td>
+					<td><{$stu.parentphone}></td>
+					
+				</tr>
+				<tr>
+					<td>家庭住址</td>
+					<td><{$stu.address}></td>
+					<td>是否贫困</td>
+					<td></td>
+					<td>四级是否通过</td>
+					<td><{$stu.siji}></td>
+					
+				</tr>
+				<tr>
+					<td>不及格门数</td>
+					<td></td>
+				</tr>
+			</table>
+			<input type="button" class="ebaocun" value="保 存" onclick="Submit()">
+			</form>
+		</div>
+	</div>
+</div>
+<!-- <script src="jquery-1.8.3.min.js"></script> -->
+<script src="<{$res}>/js/student.js"></script>
+</body>
+</html>

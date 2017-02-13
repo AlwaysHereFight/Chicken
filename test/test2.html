@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title>textarea focus</title>
+  <script src='jquery.js' type='text/javascript'></script>
+  <script type='text/javascript'>
+        $(function(){
+            $('#aaa').focus(function(){
+                alert('aaa');
+            });
+        });
+        function bbb(){
+            alert('bbb');
+        }
+  </script>
+ </head>
+ <body>
+  <textarea onfocus="aaa()" id="aaa">aaaaaa</textarea>
+  <textarea onfocus="bbb()" id="bbb">bbbbbb</textarea>
+ </body>
+</html>

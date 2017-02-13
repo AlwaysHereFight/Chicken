@@ -1,0 +1,166 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+body{
+	background:#ffffff;
+}
+.wmiframe1{
+	width: 15%;
+	height: 94.5%;
+	float: left;
+	position: fixed;
+	top: 40px;
+	left: 0px;
+
+}
+.wmtop{
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index:1;
+}
+.wmtop p{
+	line-height: 40px;
+	font-weight: bold;
+	/*font-style: ;*/
+	color:#B79F9F;
+	margin-left: 20px;
+}
+.wmtop p span{
+	font-family: kaiti;
+	color: #B99DBF;
+	margin-right: 10px;
+}
+.exinxi{
+	width:1200px;
+	position:relative;
+	margin:60px 5px;
+}
+.eright{
+	width:1100px;
+	border-left:1px solid #E2E0E0;
+	border-right:1px solid #E2E0E0;
+	border-bottom:1px solid #E2E0E0;
+	position:absolute;
+	top:0px;
+	left:215px;
+	background:#ffffff;
+}
+.epersou p{
+	width:1081px;
+	height:25px;
+	border-top:4px solid #B699E5;
+	padding:13px 10px;
+	font-size:25px;
+	font-weight:bold;
+	color:#9a48cc;
+	font-family: kaiti;
+}
+.epersou hr{
+	border:1px solid #E2E0E0;
+}
+.epersou{
+	position:relative;
+}
+.epersou a{
+	position:absolute;
+	top:30px;
+	left:930px;
+	font-size:18px;
+	color:#9a48cc;
+	text-decoration:none;
+}
+.epersou a:hover{
+	color:#D56A1F;
+}
+.edata{
+	margin:20px 20px;
+	position:relative;
+}
+.echongzhi{
+	width:150px;
+	height:30px;
+	font-size:15px;
+	font-weight:bold;
+}
+.echongzhi:hover{
+	background:#cccccc;
+	cursor:pointer;
+}
+.exuesheng{
+	padding:20px 0px;
+}
+.eqiye{
+	position:relative;
+}
+.exuesheng{
+	position:absolute;
+	top:-15px;
+	right:50px;
+}
+.edata hr{
+	width:978px;
+	margin:10px -20px;
+}
+.eshangchuan{
+	float:right;
+	margin:-30px 300px;
+}
+.eqiye h3{
+	margin:10px 0px;
+}
+ul{
+	position:relative;
+}
+ul li{
+	width:1060px;
+	height:35px;
+	line-height:30px;
+	background:#EBEBEB;
+	margin-top:15px;
+}
+ul button{
+	width:35px;
+	height:20px;
+	color:red;
+	float:right;
+	margin-top:6px;
+	margin-right:10px;
+	line-height:15px;
+	cursor:pointer;
+}
+.ejishu{
+	/*float:right;
+	margin-right:1px;
+	margin-bottom:30px;
+	margin-top:30px;*/
+	position:absolute;
+	top:0px;
+	right:120px;
+}
+.ejishu span{
+	color:#D56A1F;
+	font-size:20px;
+}
+#ebtn3:hover{
+	background:#cccccc;
+	cursor:pointer;
+}
+#ebtn3{
+	width:60px;
+	height:25px;
+	font-size:15px;
+	font-weight:bold;
+	position:absolute;
+	top:0px;
+	right:1px;
+	line-height:15px;
+	cursor:pointer;
+}

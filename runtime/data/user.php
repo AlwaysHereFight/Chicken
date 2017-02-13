@@ -1,0 +1,1 @@
+<?php {"pri":"id","0":"uname","1":"upassword","2":"privilege"}yes
