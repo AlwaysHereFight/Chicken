@@ -1,1 +1,0 @@
-<?php {"0":"major","1":"class","pri":"xh","2":"spassword","3":"openid","4":"sname","5":"gender","6":"jiguan","7":"address","8":"phone","9":"parentphone","10":"siji","11":"sijistate","12":"jobintent","13":"jobcity","14":"jobstate","15":"jobdirect","16":"company","17":"vita","18":"whitelist","19":"jobnotice","20":"renegenotice","21":"poverty"}yes
