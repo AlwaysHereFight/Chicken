@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>白名单</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="<{$res}>/css/whitelist.css">
+	<script src="<{$res}>/js/whitelist.js"></script>
+	<!-- <link rel="stylesheet" href="../resource/css/pc-inf.css"> -->
+</head>
+<body>
+	<header>
+		<div class="wmtop" style='z-index: 100'>
+		<p><span>印刷包装与数字媒体学院</span>就业信息管理系统</p>
+		</div>
+		<iframe src="<{$navurl}>" frameborder="0" scrolling="no" class="wmiframe1" name="wmiframe1">
+		</iframe>
+	</header>
+	<div id='lbox2'>
+		<form method="" action="" name='whitelistform'>
+			<div class='lstu-inf'>
+				<div class='lchaxun'>
+					姓名：<input type="text" id="lname">
+					学号：<input type="text" id="lxh">
+					<button id="lcx">查询</button>
+					<button id="lfh">返回</button>
+				</div>
+				<table id='ltab'>
+					<tr id='ltr2'>
+						<th>选择</th>
+						<th>学号</th>
+						<th>姓名</th>
+						<th>专业</th>
+						<th>班级</th>
+						<th>四级是否通过</th>
+						<th>不及格课程</th>
+						<th>电话</th>
+						<th>备注</th>
+						<th>详情信息</th>
+					</tr>
+					<{section name = 'doc' loop = $stus}>
+						<tr>
+							<td><input type="checkbox" name="lcheckbox"></td>
+							<td class="lxuahao"><{$stus[doc].xh}></td>
+							<td class="lxingming"><{$stus[doc].sname}></td>
+							<td><{$stus[doc].major}></td>
+							<td><{$stus[doc].class}></td>
+							<td><{$stus[doc].siji}></td>
+							<td></td>
+							<td><{$stus[doc].phone}></td>
+							<td>
+								<div class='ltxtarea'>
+									<textarea name=""  class='ltex'></textarea>
+								</div>
+							</td>
+							<td><a href="/admin.php/stuinfo/student">详情</a></td>
+						</tr>
+					<{/section}>
+				</table>
+				<div class='lxuanze'>
+					<p>选择:<a href="#" id='lall'>全部</a>-<a href="#" id='lunall'>反选</a></p>
+				</div>
+				<input type="button"  id='lyc' value="移除">
+				<input type="submit"  id='lbc' value="保存">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

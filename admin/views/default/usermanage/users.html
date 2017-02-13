@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>学生信息</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="<{$res}>/css/users.css">
+	<script src="public/js/statistics.js"></script>
+</head>
+<body>
+	<div class="wmtop">
+		<div class="wmlogo">
+			<div>
+				<img src="<{$res}>/images/logo.png" alt="">
+			</div>
+			<p><span>印刷包装与数字媒体学院</span>就业信息管理系统</p>
+		</div>
+		
+	</div>
+<div id="con1">
+	<iframe src="<{$navurl}>" frameborder="0" scrolling="no" class="wmiframe1" name="wmiframe1">	
+	</iframe>
+	<{if $privilege == 1}>
+		<div class="wmdiv1">
+			<div class="wmdiv2">
+				<div class="wmdiv3"></div>
+				管理员
+				</div>
+				<div class="wmsearch1">
+			</div>
+			<form method="post" action="<{$url}>/users">
+				<div class="wmusers">
+					<table border="1px" cellspacing="0px" bordercolor='#ccc' cellpadding="0px" id="wmmanage">
+						<tr>
+							<th>管理员</th>
+							<th>密码</th>
+						</tr>
+						<tr id="managetr">
+							<td><input type="text" name="uname" value="<{$admin.uname}>" readonly="read" class="manageinput"></td>
+							<td><input type="password" name="upassword" value='123456' class="manageinput"></td>
+
+						</tr>
+
+						<input type="submit" name="admin" value="修改" class="wmsave" id="wmsave">
+					</table>
+				</div>
+
+				
+			</form>
+		</div>
+		<form method="post" action="<{$url}>/users" >
+			<div class="wmdiv1">
+				<div class="wmdiv5">
+					<div class="wmdiv3"></div>
+					用户
+					</div>
+					<div class="wmsearch1">
+				</div>
+
+				<div class="wmusers">
+					<table border="1px" cellspacing="0px" bordercolor='#ccc' cellpadding="0px" id="wmuser">
+						<tr>
+							<th>用户名</th>
+							<th>密码</th>
+							<th>删除</th>
+							
+						</tr>
+
+						
+						<{section name = doc loop=$users}>
+							<tr>
+								<th><{$users[doc].uname}></th>
+								<th>******</th>
+								<th><a href="<{$url}>/users/uname/<{$users[doc].uname}>" style='font-size:15px'>删除</th>
+							</tr>
+						<{/section}>
+
+						<tr>
+							<th><input type='text' name='uname'></th>
+							<th><input type='password' name='upassword'></th>
+							<th></th>
+						</tr>
+
+					</table>
+				<input type="submit" name="adduser" value="添加用户" class="wmsave" id="wmsave1">
+				</div>	
+			</div>
+		</form>
+	<{/if}>
+
+	<{if $privilege == '2'}>
+		<div class="wmdiv1">
+			<div class="wmdiv2">
+				<div class="wmdiv3"></div>
+					用户
+				</div>
+				<div class="wmsearch1">
+			</div>
+			<form method="post" action="<{$url}>/users">
+				<div class="wmusers">
+					<table border="1px" cellspacing="0px" bordercolor='#ccc' cellpadding="0px" id="wmmanage">
+						<tr>
+							<th>用户名</th>
+							<th>密码</th>
+						</tr>
+						<tr id="managetr">
+							<td><input type="text" name="uname" value="<{$user.uname}>" readonly="read" class="manageinput"></td>
+							<td><input type="password" name="upassword" value="123456" class="manageinput"></td>
+
+						</tr>
+
+						<input type="submit" name="user" value="修改密码" class="wmsave" id="wmsave">
+					</table>
+				</div>
+
+				
+			</form>
+		</div>
+	<{/if}>
+
+</div>
+<script src="<{$res}>/js/users.js"></script>
+</body>
+</html>

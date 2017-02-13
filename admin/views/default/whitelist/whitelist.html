@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>特别关注学生</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="<{$res}>/css/whitelist.css">
+	<script src="<{$res}>/js/whitelist.js"></script>
+	<script src="<{$res}>/js/jquery-1.11.3.min.js"></script> 	
+	<script src="public/js/statistics.js"></script>
+
+	<script>
+		function jobnotice(obj){
+
+			var xh = obj.getAttribute('xh');
+			var value = obj.value;
+
+			//ajax语句
+			$.post("<{$app}>/whitelist/jobnotice",
+					{
+						xh:xh,
+						jobnotice:value
+					},function(data){
+						if(data=='success'){
+							alert('备注成功');
+						}else{
+							alert('备注失败');
+						}
+				
+					});
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<div class="wmtop">
+			<div class="wmlogo">
+				<div>
+					<img src="<{$res}>/images/logo.png" alt="">
+				</div>
+				<p><span>印刷包装与数字媒体学院</span>就业信息管理系统</p>
+			</div>
+		</div>
+	</header>
+<div id="con1">
+	<iframe src="<{$navurl}>" frameborder="0" scrolling="no" class="wmiframe1" name="wmiframe1">
+		</iframe>
+	
+	<div id='lbox2'>
+		<form method="post" action="<{$url}>/whitelist">
+			<div class='lstu-inf'>
+				<div class="ltcon">
+					<div class="wmdiv2">特别关注学生</div>
+				</div>
+				<table id='ltab'>
+					<tr id='ltr2'>
+						<th>学号</th>
+						<th>姓名</th>
+						<th>专业</th>
+						<th>班级</th>
+						<th>四级是否通过</th>
+						<th>手机</th>
+						<th>就业备注</th>
+						<th>详情信息</th>
+						<th>移除</th>
+					</tr>
+					<{section name = 'doc' loop = $stus}>
+						<tr>
+							<td class="lxuahao"><{$stus[doc].xh}></td>
+							<td class="lxingming"><{$stus[doc].sname}></td>
+							<td><{$stus[doc].major}></td>
+							<td><{$stus[doc].class}></td>
+							<td><{$stus[doc].siji}></td>
+							<td><{$stus[doc].phone}></td>
+							<td>
+								<div class='ltxtarea'>
+									<textarea xh="<{$stus[doc].xh}>" class='ltex' onchange='jobnotice(this)'><{$stus[doc].jobnotice}></textarea>
+								</div>
+							</td>
+							<td><a href="<{$app}>/stuinfo/student/xh/<{$stus[doc].xh}>">详情</a></td>
+							<td><a href="<{$url}>/whitelist/xh/<{$stus[doc].xh}>">移除</a></td>
+						</tr>
+					<{/section}>
+				</table>
+				<div class='lxuanze'>
+					<p>选择:<a href="#" id='lall'>全部</a>-<a href="#" id='lunall'>反选</a></p>
+				</div>
+				<input type="submit"  id='lyc' value="提交">
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>

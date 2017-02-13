@@ -1,0 +1,103 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+body{
+	background:#cccccc;
+}
+.wmiframe1{
+	width: 15%;
+	height: 94.5%;
+	float: left;
+	position: fixed;
+	top: 120px;
+	left: 80px;
+
+}
+.eframe2{
+	width:100%;
+	height:100px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:10000;
+}
+.exinxi{
+	width:1200px;
+	position:relative;
+	margin:120px 80px;
+}
+.eleft{
+	width:200px;
+	height:500px;
+	background:#9A49FD;
+	position:fixed;
+	top:120px;
+	left:80px;
+	z-index:10000;
+}
+.eleft p{
+	width:90px;
+	height:40px;
+	margin:0px 0px;
+	padding:20px 60px;
+	line-height:38px;
+	color:#000;
+	font-weight:bold;
+	border-bottom:1px solid #cccccc;
+}
+.eleft p:hover{
+	background-color:#7830D0;
+	cursor:pointer;
+}
+.eleft a{
+	text-decoration:none;
+}
+.eright{
+	width:980px;
+	position:absolute;
+	top:0px;
+	left:215px;
+	background:#ffffff;
+}
+.epersou p{
+	padding:20px 10px;
+	font-size:30px;
+	font-weight:bold;
+	color:#D56A1F;
+	font-family:KaiTi;
+}
+.edata{
+	margin:20px 20px;
+	position:relative;
+}
+.exuesheng{
+	position:relative;
+	margin-top:30px;
+}
+ul{
+	position:relative;
+}
+ul li{
+	width:940px;
+	height:200px;
+	line-height:30px;
+	background:#EBEBEB;
+	margin-top:30px;
+}
+ul button{
+	width:100px;
+	height:30px;
+	font-size:15px;
+	font-weight:bold;
+	position:absolute;
+	top:-50px;
+	right:0px;
+	line-height:15px;
+	cursor:pointer;
+}
+ul button:hover{
+	background:#cccccc;
+	cursor:pointer;
+}

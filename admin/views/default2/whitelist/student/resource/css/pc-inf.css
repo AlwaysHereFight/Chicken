@@ -1,0 +1,158 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+header{
+	width:100%;
+	height:150px;
+	background:url(../images/1.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+.lbox1{
+	width:900px;
+	margin: 0px auto;
+}
+nav{
+	height: 40px;
+	margin-top:10px;
+	position: relative;
+	/*background-color: #f1f1f1;*/
+	line-height: 40px;
+	font-weight: bold;
+}
+nav a{
+	width:180px;
+	height:40px;
+	text-decoration: none;
+	display: block;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+}
+.logo{
+	height:100px;
+}
+.logo p{
+	line-height: 100px;
+	float: left;
+	font-size: 50px;
+	font-weight: bold;
+}
+.logo span{
+	line-height: 100px;
+	font-size: 30px;
+}
+nav .ldiv1{
+	width:180px;
+	position: absolute;
+	top:40px;
+	left:360px;
+	display: none;
+	background-color: #fff;
+	box-shadow: 0px 0px 5px #ccc;
+	text-align: center;
+}
+.ldiv1 a{
+	height:35px;
+}
+nav a:hover {
+	background-color: #fff;
+}
+.ldiv1:hover{
+	display: block;
+}
+#lbox2{
+	width:900px;
+	margin:10px auto;
+	/*overflow: hidden;*/
+}
+article{
+	width:630px;
+	height:800px;
+	background-color: #f1f1f1;
+	float: left;
+}
+aside{
+	width:260px;
+	height:800px;
+	/*background-color: #f1f1f1;*/
+	margin-left:640px;
+}
+#lcx{
+	padding:10px;
+	background-color: #f1f1f1;
+	margin-bottom: 20px;
+}
+#lnewjl{
+	padding: 10px;
+	background-color: #f1f1f1;
+}
+#lnewjl ul{
+	margin-top: 10px;
+	list-style: none;
+}
+#lnewjl img{
+	width:50px;
+}
+#lnewjl li{
+	height: 50px;
+	font-size: 10px;
+}
+#lnewjl a{
+	text-decoration: none;
+}
+#lnewjl #lmore{
+	float:right;
+}
+/**********白名单***************/
+a{
+	text-decoration: none;
+}
+.lstu-inf{
+	margin-top: 10px;
+	/*background-color: #f1f1f1;*/
+}
+.lstu-inf th:nth-child(1){
+	width:40px;
+	height: 40px;
+}
+.lstu-inf th{
+	display: block;
+	float:left;
+	width:107px;
+}
+.lstu-inf tr{
+	height:40px;
+	line-height: 40px;
+
+}
+.lstu-inf td{
+	display: block;
+	float:left;
+	width:107px;
+}
+.lstu-inf table tr:nth-child(1){
+	background-color: skyblue;
+}
+.lstu-inf  #ltr1{
+	/*display: none;*/
+	background-color: #fff;
+}
+.lstu-inf {
+	width:900px;
+}
+.lstu-inf tr:nth-child(2n+0){
+	background-color: #f1f1f1;
+}
+.ltex{
+	width:106px;
+	height:30px;
+	/*line-height: 30px;*/
+}
+.lchaxun{
+	margin-bottom: 10px;
+}
+#ltab #lsel{
+	width:40px;
+	font-size: 10px;
+}

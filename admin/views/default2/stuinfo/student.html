@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人信息</title>
+	<link rel="stylesheet" href="../resource/css/stu.css">
+</head>
+<body>
+<div class="ebody">
+	<div class="etou">
+		<p class="eyuan">印刷包装与数字媒体学院<span class="exitong">就业信息管理系统</span></p>	
+	</div>
+	<div class="exinxi">
+		<!-- <div class="eleft">
+			<img src="../resource/images/biye4.jpg" alt="">
+			<a href="###"><p>学 生 信 息</p></a>
+			<a href="###"><p>白 名 单</p></a>
+			<a href="###"><p>数 据 管 理</p></a>
+			<a href="###"><p>用 户 管 理</p></a>
+		</div> -->
+		<iframe src="../public/nav.html" frameborder="0" class="wmiframe1" scrolling="no"></iframe>
+		<div class="eright">
+			<div class="epersou">
+				<p>个人信息</p>
+				<form action="demo_form.asp" method="get" class="esou">
+				姓名：<input type="text">
+				学号：<input type="text">
+				<input type="submit" value="搜 索" class="esousuo">
+				</form>
+				<br>
+				<hr>
+			</div>
+			<form action="" method="post" name="form1" id="euser" onsubmit="return checkcall">
+			<table class="etable">
+				<tr>
+					<td>学号</td>
+					<td>3130342008</td>
+					<td>姓名</td>
+					<td>Estelle</td>
+					<td>性别</td>
+					<td>女</td>
+				</tr>
+				<tr>
+					<td>专业</td>
+					<td>数字媒体技术</td>
+					<td>班级</td>
+					<td>媒体131</td>
+					<td>籍贯</td>
+					<td>陕西省陕西省</td>
+				</tr>
+				<tr>
+					<td>手机号码</td>
+					<td><input type="text" value="18829028536" required="required"></td>
+					<td>父母联系方式</td>
+					<td><input type="text" value="18398776666" required="required"></td>
+					<td>家庭住址</td>
+					<td><input type="text" value="陕西省陕西省陕西省" required="required"></td>
+				</tr>
+				<tr>
+					<td>是否贫困</td>
+					<td><input type="text" value="是" required="required"></td>
+					<td>四级是否通过</td>
+					<td><input type="text" value="是" required="required"></td>
+					<td>不及格课程数</td>
+					<td><input type="text" value="1" required="required"></td>
+				</tr>
+			</table>
+			<input type="button" class="ebaocun" value="保 存" onclick="Submit()">
+			</form>
+		</div>
+	</div>
+</div>
+<script src="../resource/js/stu.js"></script>
+<script src="../resource/js/top.js"></script>
+</body>
+</html>

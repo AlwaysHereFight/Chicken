@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>就业信息</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="<{$res}>/css/jobinfo.css">
+
+</head>
+<body>
+	<div class="wmdiv1">
+		<div class="wmdiv2">
+			<div class='lmask'><img src="<{$res}>/images/5.png" alt=""><p>就业信息管理系统</p></div>
+			<div class='ltop'><img src="<{$res}>/images/classify_icon.png" alt=""></div>
+			<div class='llogo'>
+				<ul>
+					<li><a href="<{$url}>/myinfo" target="_top">学生信息</a></li>
+					<li><a href="<{$url}>/recinfo" target="_top">招聘信息</a></li>
+					<li><a href="<{$url}>/jobinfo" target="_top">就业信息</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class='l1'><h1>就业信息</h1><img src="<{$res}>/images/del_icon.png" alt="" class='ldel'></div>
+	<hr>
+	<form method="post" action="<{$url}>/jobinfo" enctype='multipart/form-data'>
+	<div class="wmjob">
+		<span>就业意向：</span>
+			<select name="jobintent" id="">
+				<option value="请选择" >请选择</option>
+				<option value="就业" <{if $stu['jobintent'] eq '就业'}> selected <{/if}> >就业</option>
+				<option value="创业" <{if $stu['jobintent'] eq '创业'}> selected <{/if}> >创业</option>
+				<option value="考研" <{if $stu['jobintent'] eq '考研'}> selected <{/if}> >考研</option>
+				<option value="考公务员" <{if $stu['jobintent'] eq '考公务员'}> selected <{/if}> >考公务员</option>
+				<option value="不就业" <{if $stu['jobintent'] eq '不就业'}> selected <{/if}> >不就业</option>
+			</select>
+		<span>就业状态：</span>
+			<select name="jobstate" id="wmjobstate">
+				<option value="请选择" >请选择</option>
+				<option value="应聘中" <{if $stu['jobstate'] eq '应聘中'}> selected <{/if}> >应聘中</option>
+				<option value="签约中" <{if $stu['jobstate'] eq '签约中'}> selected <{/if}> >签约中</option>
+				<option value="已签约" <{if $stu['jobstate'] eq '已签约'}> selected <{/if}> >已签约</option>
+			</select>
+		<span id="wmcom">签约公司：</span>
+			<input type="text" name="" value="" placeholder="签约公司全称" id="wmcominput" >
+		<span>就业方向：</span>
+			<select name="jobdirect" id="">
+				<option value="请选择" >请选择</option>
+				<option value="本专业就业" <{if $stu['jobdirect'] eq '本专业就业'}> selected <{/if}> >本专业就业</option>
+				<option value="非本专业就业" <{if $str['jobdirect'] eq '非本专业就业'}> selected <{/if}> >非本专业就业</option>		
+			</select>
+		<span>意向城市：</span>
+			<input type="text" name="jobcity" value="">
+	</div>
+
+
+	<p class="wmp">
+		<span class='wmupjianli'>上传简历：</span>
+	</p>
+	<input type="file" name="vata" class="wmjianli" multiple size="80">
+	<input type='hidden' name='xh' value="<{$stu.xh}>">
+	<input type="submit" name="jobinfo" value="提交" id="wmbtn1">
+</form>
+
+<script src="<{$res}>/js/jobinfo.js"></script>
+<script>
+function resetPage() {
+    var deviceWidth = document.documentElement.clientWidth;
+    var scale = deviceWidth/640;
+    document.body.style.zoom = scale;
+}
+resetPage();
+window.onresize = function(){
+    resetPage();
+} 
+</script>
+</body>
+</html>

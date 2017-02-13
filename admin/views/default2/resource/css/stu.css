@@ -1,0 +1,121 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+body{
+	background:#cccccc;
+}
+.wmiframe1{
+	width: 15%;
+	height: 94.5%;
+	float: left;
+	position: fixed;
+	top:120px;
+	left: 80px;
+}
+.eframe2{
+	width:100%;
+	height:100px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:10000;
+}
+.exinxi{
+	width:1200px;
+	position:relative;
+	margin:120px 80px;
+}
+/*.eleft{
+	width:200px;
+	height:500px;
+	background:#9A49FD;
+	position:fixed;
+	top:120px;
+	left:80px;
+	z-index:10000;
+}
+.eleft p{
+	width:90px;
+	height:40px;
+	margin:0px 0px;
+	padding:20px 60px;
+	line-height:38px;
+	color:#000;
+	font-weight:bold;
+	border-bottom:1px solid #cccccc;
+}
+.eleft p:hover{
+	background-color:#7830D0;
+	cursor:pointer;
+}
+.eleft a{
+	text-decoration:none;
+}*/
+.eright{
+	width:980px;
+	position:absolute;
+	top:0px;
+	left:215px;
+	background:#ffffff;
+}
+.epersou p{
+	padding:20px 10px;
+	font-size:30px;
+	font-weight:bold;
+	color:#D56A1F;
+	font-family: kaiti;
+
+}
+.esou{
+	padding:20px 10px;
+	font-weight:bold;
+}
+.esou input{
+	height:25px;
+}
+.esousuo{
+	width:100px;
+	height:25px;
+	font-size:15px;
+	font-weight:bold;
+}
+.esousuo:hover{
+	background:#cccccc;
+	cursor:pointer;
+}
+.etable{
+	margin:30px 0px;
+	border:1px solid #cccccc;
+	border-bottom:none;
+}
+.etable td{
+	text-align:center;
+	width:245px;
+	height:50px;
+	border-right:1px solid #cccccc;
+	border-bottom:1px solid #cccccc;
+}
+.etable input{
+	width:200px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	border:none;
+	font-size:18px;
+	font-family:"宋体";
+}
+.ebaocun{
+	width:100px;
+	height:30px;
+	margin-left:430px;
+	margin-bottom:30px;
+	font-size:15px;
+	font-weight:bold;
+	cursor:pointer;
+}
+.ebaocun:hover{
+	background:#cccccc;
+	cursor:pointer;
+}

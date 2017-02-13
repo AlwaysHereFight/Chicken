@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>白名单</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../resource/css/whitelist.css">
+	<script src="../resource/js/whitelist.js"></script>
+	<!-- <link rel="stylesheet" href="../resource/css/pc-inf.css"> -->
+</head>
+<body>
+	<header>
+		<div class="wmtop">
+		<p><span>印刷包装与数字媒体学院</span>就业信息管理系统</p>
+	</div>
+	<iframe src="../public/nav.html" frameborder="0" scrolling="no" class="wmiframe1" name="wmiframe1">
+		
+	</iframe>
+	</header>
+	<div id='lbox2'>
+		<div id='lbmd'>
+			<a href="#">首页</a>&gt&gt
+			<a href="#">白名单</a>
+		</div>
+		<hr>
+		<div class='lstu-inf'>
+			<div class='lchaxun'>
+				姓名：<input type="text" id="lname">
+				学号：<input type="text" id="lxh">
+				<button id="lcx">查询</button>
+			</div>
+			<table id='ltab'>
+				<tr>
+					<th>选择</th>
+					<th>学号</th>
+					<th>姓名</th>
+					<th>专业</th>
+					<th>班级</th>
+					<th>四级是否通过</th>
+					<th>不及格课程</th>
+					<th>是否需要约谈</th>
+					<th>备注</th>
+				</tr>
+				<tr id='ltr1'>
+					<td id='lsel'><input type="checkbox"></td>
+					<td class='lxuehao'><a href="#">1</a></td>
+					<td class='lxingming'>1111111</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><input type="radio" name="ly" class='ly1'>是
+						<input type="radio" name="ly" class='ly2'>否</td>
+					<td><form action="" class='ltxtarea'>
+							<textarea name="" class='ltex' cols="7" rows="1" ></textarea>
+						</form>
+					</td>
+				</tr>
+			</table>
+			<div class='lxuanze'>
+				<p>选择:<a href="#" id='lall'>全部</a>-<a href="#" id='lunall'>反选</a></p>
+			</div>
+			<input type="button"  id='lyc' value="移除">
+			<input type="button"  id='lbc' value="保存">
+		</div>
+	</div>
+</body>
+</html>

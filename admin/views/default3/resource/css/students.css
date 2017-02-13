@@ -1,0 +1,203 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+body{
+	background-color: #fff;
+}
+.wmtop{
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #ccc;
+	background-color: #F9F9F9;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+}
+.wmtop p{
+	line-height: 40px;
+	font-weight: bold;
+	/*font-style: ;*/
+	color:#B79F9F;
+	margin-left: 20px;
+}
+.wmtop p span{
+	font-family: kaiti;
+	color: #B99DBF;
+	margin-right: 10px;
+}
+
+.wmiframe1{
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: fixed;
+	top: 40px;
+	left: 0px;
+
+}
+.wmstuinfo{
+	width:1100px;
+	height: 72%;
+	margin-top: 10px;
+	margin-left: 210px;
+	margin-top: 215px;
+	z-index: -1;
+}
+.wmsearch1{
+	width: 1100px;
+	float: left;
+	margin-left: 10px;
+	/*padding-bottom: 20px;*/
+	font-family: Arial;
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #ccc;
+	/*background-color: #BAA0C7;*/
+	/*position: relative;*/
+	/*overflow: hidden;*/
+}
+.wmdiv1{
+	width: 95%;
+	overflow: hidden;
+	position: fixed;
+	top: 41px;
+	left: 210px;
+	z-index: 1;
+	background-color: #fff;
+	padding-bottom: 21px;
+}
+.wmoutspan{
+	/*float: left;*/
+	/*margin-top: -50px;*/
+	position: absolute;
+	top: 40%;
+	left: 660px;
+}
+.wmoutspan div{
+	margin-left: 80px;
+	margin-top: 14px;
+	font-size: 15px;
+}
+.wmoutspan .div1{
+	margin-top: -20px;
+}
+.wmcx1{
+	width: 100px;
+	height: 30px;
+	/*border-radius: 30%;*/
+	margin-left: 6%;
+	margin-top: -20px;
+	/*background-color: #BAA0C7;*/
+}
+
+.wmbtn1{
+	width: 100px;
+	height: 30px;
+	float: left;
+	margin-top:-88px ;
+	margin-left:980px;
+	/*background-color: #BAA0C7;*/
+}
+.wmbtn2{
+	width: 100px;
+	height: 30px;
+	float: left;
+	margin-top:-48px;
+	margin-left: 980px;
+	/*background-color: #BAA0C7;*/
+}
+
+.wmsearch1 select{
+	margin-left: 10px;
+	margin-top:15px;
+}
+
+.wmsearch1 .select1{
+	margin-bottom: 10px;
+}
+.wmsearch1 input{
+	font-size: 10px;
+}
+#wmdiv1{
+	width: 1100px;
+	height: 20px;
+	background-color: #ccc;
+	position: fixed;
+	top: 200px;
+	left: 220px;
+	/*z-index: 1000;*/
+}
+.wmstuinfo table{
+	/*width: 100%;*/
+	width: 1102px;
+	float: left;
+	margin-top: 33px;
+	margin-left:10px ;
+	background-color: #fff;
+	text-align: center;
+	border:1px solid #ccc;
+	position: relative;
+	/*border:1px solid black;*/
+}
+
+.wmstuinfo table tr th{
+	width:100.1px;
+	height: 30px;
+	background-color: rgba(188, 155, 241,1);
+
+}
+
+#th{
+	width: 1102px;
+	position: fixed;
+	top: 220px;
+	/*left: 20px;*/
+}
+
+.wmstuinfo table tr td{
+/*	display: block; */
+	width: 90px;
+	height: 30px;
+	/*text-align: center;*/
+	font-size: 16px;
+}
+
+
+
+
+.wmdiv4{
+	margin-top: 50px;
+	margin-left: 210px;
+}
+
+.wmdiv2{
+	/*float: left;*/
+	width: 70px;
+	font-size: 15px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	border-width:4px 1px 0px 1px;
+	border-style: solid;
+	border-color:#9a49fd #ccc #ccc #ccc ;
+	/*margin-top: 10px;*/
+	/*padding-top: 10px;*/
+	margin-left: 10px;
+	/*position: relative;*/
+}
+.wmdiv3{
+	/*float: left;*/
+	width: 70px;
+	height: 2px;
+	background-color:rgba(100, 100, 100, 0.6);
+	/*padding-top: 10px;*/
+	/*border-top: 4px solid;*/
+}
+#wmp{
+	width: 1100px;
+	height: 10px;
+	background-color: #fff;
+	margin-left: 10px;
+}

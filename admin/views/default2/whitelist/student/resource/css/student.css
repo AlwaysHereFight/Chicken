@@ -1,0 +1,108 @@
+*{
+			margin:0px;
+			padding:0px;
+}
+.lbox{
+	width:100%;
+}
+.lbox2{
+	overflow: hidden;
+}
+.lmask{
+	width:100%;
+	height: 200px;
+	float:left;
+	background-color: rgba(152,31,227,0.5);
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 200px;
+	color:#fff;
+	padding-left:40px;
+}
+.ltop{
+	height:200px;
+	background: url(../images/1.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+ul{
+	list-style: none;
+	margin-left:10px;
+}
+#linform li{
+	height:60px;
+	font-size: 32px;
+	line-height: 60px;
+
+}
+#linform li input{
+	height:30px;
+	box-shadow: 0px 0px 5px #ccc;
+
+}
+#linform button{
+	width:100px;
+	height:60px;
+	margin-left:10px;
+}
+#lkc{
+	width:80%;
+	position:relative;
+	margin-top:10px;
+}
+#lkc a{
+	text-decoration: none;
+	color:skyblue;
+}
+#lkc #lt{
+	/*float:left;*/
+	font-size: 32px;
+}
+
+#lkc #lnumber{
+	border-radius: 5px;
+	height: 30px;
+	width:49%;
+}
+#lkc input{
+	border-radius:10px;
+	height: 32px;
+	width:85%;
+	margin-bottom: 10px;
+	margin-left:10px;
+}
+#ltj{
+	position: absolute;
+	top:0px;
+	right:0px;
+	width:30px;
+	height: 30px;
+	background:#000 url(../images/tianjia.png) 0 0 no-repeat;
+}
+#lkc p{
+	color:red;
+	display: none;
+	/*position: absolute;
+	top:45px;
+	right:0px;*/
+}
+#lipt{
+	width:20%;
+	height: 32px;
+}
+#lbtn{
+	margin-left:10px;
+}
+#lbtn input{
+	width:15%;
+	height: 50px;
+	background-color: rgba(152,31,227,0.8);
+	border-radius: 10px;
+}
+#lkc div{
+	position: relative;
+}
+#lkc div span{
+	position: absolute;
+	top:0px;
+	right:0px;
+}

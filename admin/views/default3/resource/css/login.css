@@ -1,0 +1,99 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+body{
+	background:url(../images/biye3.jpg) 0 0 no-repeat;
+	background-size:cover;
+	/*height: 100%;*/
+	overflow: hidden;
+}
+
+.econ{
+	width:600px;
+	background-color:rgba(150,0,255,0.8) ;
+	margin:150px auto;
+	border-radius: 20px;
+}
+.edenglu{
+	/*width:600px;*/
+	height:100%;
+	margin:0px auto;
+	overflow: hidden;
+}
+.edenglu img{
+	float: left;
+	
+}
+.log{
+	width:400px;
+	margin:0px auto;
+	background:url(../images/yuanbiao1.png) -8px 30px no-repeat;
+	
+}
+.log h1{
+	height:170px;
+	color:#000;
+	font-style:italic;
+	line-height: 200px;
+	margin-left:120px;
+	/*margin-top:100px;*/
+	
+}
+.con{
+	width:400px;
+	margin:0px auto;
+	text-align: center;
+}
+
+.con .eyonghuming{
+	margin-bottom: 20px;
+	font-size:25px;
+}
+
+.eyonghuming input{
+	width:235px;
+	height:35px;
+	line-height:38px;
+	background:rgba(255,255,255,0.8);
+	font-size: 20px;
+}
+.emima input{
+	width:235px;
+	height:35px;
+	line-height:38px;
+	background:rgba(255,255,255,0.8);
+	font-size: 20px;
+
+}
+.con .emima{
+	/*position:absolute;
+	top:370px;
+	left:400px;*/
+	font-size:25px;
+}
+.con .ema{
+	padding-left:27px;
+}
+.exuehao::-webkit-input-placeholder{
+	color:#666;
+	font-size:18px;
+	padding-left:5px;
+}
+.etijiao{
+	width:239px;
+	height:35px;
+	background:#ff9936;
+	margin: 20px 0px 20px 102px;
+	font-size:25px;
+	font-weight:bold;
+	cursor:pointer;
+	color: #fff;
+}/*
+.eti{
+	padding-left:5px;
+}
+.ejiao{
+	padding-left:50px;
+}*/

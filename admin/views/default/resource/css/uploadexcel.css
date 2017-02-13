@@ -1,0 +1,150 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+body{
+	background:#ffffff;
+}
+.wmtop{
+	width: 100%;
+	/*height: 40px;*/
+	border-bottom: 0px solid #ccc;
+	/*background: rgba(105, 97, 92,0);*/
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+}
+.wmlogo{
+	background-color: rgb(159, 153, 208);
+	/*background-image: url(../images/bg.jpg);*/
+	/*background-size: cover;*/
+}
+.wmlogo div:nth-child(1){
+	margin:0px 0px 0px 50px;
+	width: 280px;
+	height: 75px;
+}
+.wmlogo div:nth-child(1) img{
+	width: 235px;
+	height: 65px;
+}
+.wmtop p{
+	height: 80px;
+	line-height: 68px;
+	font-weight: bold;
+	width: 685px;	
+	color:#fff;
+	margin:0px auto;
+	margin-top: -38px;
+	font-size: 24px;
+	background:url(../images/yuanbiao1.png) -5px -15px no-repeat;
+	font-family: kaiti;
+}
+.wmtop p span{
+	font-family: STkaiti;
+	color: #873168;
+	margin-right: 10px;
+	margin-left: 80px;
+	font-size: 30px;
+}
+
+#con1{
+	width: 1316px;
+	margin:0px auto;
+}
+.wmiframe1{
+	width: 100%;
+	height: 87%;
+	float: left;
+	position: fixed;
+	top: 130px;
+
+}
+
+.exinxi{
+	width:1316px;
+	position:relative;
+	margin:60px auto;
+}
+.eright{
+	width:1102px;
+	border-left:1px solid #E2E0E0;
+	border-right:1px solid #E2E0E0;
+	border-bottom:1px solid #E2E0E0;
+	position:absolute;
+	top:71px;
+	left:215px;
+	background:#ffffff;
+}
+#p1{
+	position:absolute;
+	top:0px;
+	right:120px;
+}
+
+#p1 span{
+	color:#D56A1F;
+	font-size:20px;
+}
+
+.epersou p{
+	width:1081px;
+	height:25px;
+	border-top:4px solid #B699E5;
+	padding:13px 10px;
+	font-size:25px;
+	font-weight:bold;
+	color:#9a48cc;
+	font-family: kaiti;
+}
+.epersou hr{
+	border:1px solid #E2E0E0;
+}
+.edata{
+	margin:20px 20px;
+	position:relative;
+}
+.exuesheng{
+	position:relative;
+	margin-top:30px;
+}
+ul{
+	position:relative;
+}
+ul li{
+	width:1060px;
+	height:35px;
+	padding-left:10px;
+	line-height:30px;
+	background:#EBEBEB;
+	margin-top:20px;
+}
+ul button{
+	width:35px;
+	height:20px;
+	color:red;
+	float:right;
+	margin-top:6px;
+	margin-right:10px;
+	line-height:15px;
+	cursor:pointer;
+}
+#ebtn1:hover{
+	background:#cccccc;
+	cursor:pointer;
+}
+#ebtn1{
+	width:100px;
+	height:30px;
+	font-size:15px;
+	font-weight:bold;
+	position:absolute;
+	top:-6px;
+	right:0px;
+	line-height:15px;
+	cursor:pointer;
+	background-color: #A2BFAD;
+
+}
